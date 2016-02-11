@@ -1011,7 +1011,7 @@ button[type="submit"] .form-loading{ height: 25px; width: 25px; display: inline-
 img{ max-width: 100%; }
 
 .image-tile{ overflow: hidden; position: relative; margin-bottom: 24px; }
-.image-tile img{ width: 100%; display: inline-block; }
+.image-tile img{ width: 360;height: 251;display: inline-block; }
 .image-tile .label{ position: absolute; top: 16px; right: 16px; z-index: 5; }
 
 .inner-title:before{ .transition(.5s); content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 100%; background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(34,34,34,.9) 100%);  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(34,34,34,.9))); background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(34,34,34,.9) 100%); background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(34,34,34,.9) 100%); background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(34,34,34,.9) 100%); background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(34,34,34,.9) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#292929',GradientType=0 ); pointer-events: none;  }
@@ -1570,31 +1570,31 @@ video{ max-width: 100%; }
 
 /*!---------- 35. MODALS ----------*/
 
-.foundry_modal{ overflow: hidden; max-width: 50%; width: 50%; position: fixed; padding: 80px 48px; .transition(0.3s); opacity: 0; visibility: hidden; top: 50%; left: 50%; background: #fff; .cast-shadow; transform: translateX(-50%) translateY(-40%); -webkit-transform: translateX(-50%) translateY(-40%); z-index: -1; }
-.foundry_modal.no-bg{ background: none; box-shadow: none !important; }
+.jhink_modal{ overflow: hidden; max-width: 50%; width: 50%; position: fixed; padding: 80px 48px; .transition(0.3s); opacity: 0; visibility: hidden; top: 50%; left: 50%; background: #fff; .cast-shadow; transform: translateX(-50%) translateY(-40%); -webkit-transform: translateX(-50%) translateY(-40%); z-index: -1; }
+.jhink_modal.no-bg{ background: none; box-shadow: none !important; }
 .modal-screen{ position: fixed; width: 100%; height: 100%; background: @bg-dark; opacity: 0; z-index: 9998; .transition(0.3s); visibility: hidden; top: 0; left: 0; }
 .modal-screen.reveal-modal{ opacity: .8; visibility: visible; }
-.foundry_modal.reveal-modal{ opacity: 1; visibility: visible; z-index: 9999; transform: translateX(-50%) translateY(-40%); -webkit-transform: translateX(-50%) translateY(-50%); }
-.foundry_modal .close-modal{ z-index: 4; position: absolute; top: 24px; right: 32px; cursor: pointer; font-size: 18px; }
-.foundry_modal *:not(.background-image-holder):not(.close-modal){ z-index: 4; position: relative; }
-.foundry_modal.image-bg .close-modal, .foundry_modal.no-bg .close-modal{ color: #fff; }
-.foundry_modal iframe{ width: 100%; min-height: 400px; }
+.jhink_modal.reveal-modal{ opacity: 1; visibility: visible; z-index: 9999; transform: translateX(-50%) translateY(-40%); -webkit-transform: translateX(-50%) translateY(-50%); }
+.jhink_modal .close-modal{ z-index: 4; position: absolute; top: 24px; right: 32px; cursor: pointer; font-size: 18px; }
+.jhink_modal *:not(.background-image-holder):not(.close-modal){ z-index: 4; position: relative; }
+.jhink_modal.image-bg .close-modal, .jhink_modal.no-bg .close-modal{ color: #fff; }
+.jhink_modal iframe{ width: 100%; min-height: 400px; }
 
 @media all and (min-width: 1500px){
-	.foundry_modal{ max-width: 45%; width: 45%; }
+	.jhink_modal{ max-width: 45%; width: 45%; }
 }
 
 @media all and (max-width: 1190px){
-	.foundry_modal{ max-width: 70%; width: 70%; padding: 64px 32px; }
+	.jhink_modal{ max-width: 70%; width: 70%; padding: 64px 32px; }
 }
 
 @media all and (max-width: 990px){
-	.foundry_modal{ max-width: 80%; width: 80%; padding: 64px 32px; }
+	.jhink_modal{ max-width: 80%; width: 80%; padding: 64px 32px; }
 }
 
 @media all and (max-width: 767px){
-	.foundry_modal{ max-width: 90%; width: 90%; padding: 48px 15px; transform: translateX(0%) translateY(50%); -webkit-transform: translateX(0%) translateY(50%); }
-	.foundry_modal .close-modal{ right: 18px; }
+	.jhink_modal{ max-width: 90%; width: 90%; padding: 48px 15px; transform: translateX(0%) translateY(50%); -webkit-transform: translateX(0%) translateY(50%); }
+	.jhink_modal .close-modal{ right: 18px; }
 }
 
 .iframe-modal{ width: 90%; height: 90%; max-width: 90%; padding: 0; }

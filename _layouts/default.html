@@ -1,0 +1,224 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+          {% if page.title %}
+            {{ page.title }}
+          {% else %}
+            Default Page Title
+          {% endif %}
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/css/et-line-icons.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/theme-nearblack.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+
+    </head>
+    <body class="btn-rounded">
+
+		<div class="nav-container">
+        <a id="top"></a>
+        <nav class="{% if page.menu %}{{ page.menu }}{% else %}absolute{% endif %}">
+		    <!-- <nav class="absolute "> -->
+		        <div class="nav-bar">
+		            <div class="module left">
+		                <a href="/index.html">
+		                    <img class="logo logo-light" alt="Jhink" src="/img/logo-light.png">
+		                    <img class="logo logo-dark" alt="Jhink" src="/img/logo-dark.png">
+		                </a>
+		            </div>
+		            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+		                <i class="ti-menu"></i>
+		            </div>
+		            <div class="module-group right">
+		                <div class="module left">
+                      <ul class="menu">
+                          <li >
+                              <a href="/whatwedo">What we do </a>
+                              <!-- <ul>
+                                  <li>
+                                      <a href="/whatwedo">
+                                          Design
+                                      </a>
+                                  </li>
+                                  <li >
+                                      <a href="/whatwedo">
+                                          Development
+                                      </a>
+                                  </li>
+                                  <li >
+                                      <a href="/whatwedo">
+                                          Data Analytics
+                                      </a>
+                                  </li>
+                              </ul> -->
+                          </li>
+                          <li >
+                              <a href="/whoweare">who we are </a>
+                              <!-- <ul>
+                                  <li>
+                                    <a href="/whoweare">
+                                          Our Brand
+                                      </a>
+                                  </li><li>
+                                          <a href="/whoweare">
+                                              Partners
+                                          </a>
+                                    </li><li>
+                                              <a href="/whoweare">
+                                                  Group Companies
+                                              </a>
+                                          </li><li>
+                                                  <a href="/whoweare">
+                                                      History &amp; Milestones
+                                                  </a>
+                                              </li><li>
+                                                      <a href="/whoweare">
+                                                          Leadership Team
+                                                      </a>
+                                                  </li><li>
+                                                          <a href="/whoweare">
+                                                              Quality
+                                                          </a>
+                                                      </li><li>
+                                                              <a href="/whoweare">
+                                                                  Vision And Values
+                                                              </a>
+                                                          </li>
+                                                          <li>
+                                                                  <a href="/whoweare">
+                                                                      Corporate Social Responsibility
+                                                                  </a>
+                                                              </li>
+
+                              </ul> -->
+                          </li>
+
+                          <li>
+                                <a href="/industries">Industries &nbsp;</a>
+                          </li>
+
+                          <li class="has-dropdown"><a href="/contact">contact</a>
+                              <ul>
+                                  <li>
+                                     <a href="/contact">
+                                          Address Info
+                                      </a>
+                                  </li>
+
+                                  <li >
+                                    <a href="/pitchus">
+                                          Partnership
+                                      </a>
+                                  </li>
+                              </ul>
+
+                          </li>
+
+                          <li>
+                              <a href="/careers">careers&nbsp;</a>
+                          </li>
+                      </ul>
+		                </div>
+		            </div>
+		        </div>
+		    </nav>
+        </div>
+
+          {{ content }}
+
+
+          <footer class="footer- bg-dark">
+            <div class="container">
+    					<div class="row mb64 mb-xs-24">
+    						<div class="col-sm-12">
+    							<a href="#">
+    								<img alt="logo" class="image-xxs" src="/img/logo-light.png">
+    							</a>
+    						</div>
+    					</div>
+    					<div class="row mb64 mb-xs-24">
+    						<div class="col-md-3 col-sm-4">
+
+    							<ul>
+                    <li><a href="/index.html"><h5 class="uppercase mb16 fade-on-hover">Home</h5></a></li>
+    								<li><a href="/whatwedo"><h5 class="uppercase mb16 fade-on-hover">About</h5></a></li>
+    								<li><h5 class="uppercase mb16 fade-on-hover"><a href="#"></a>TEAM</h5></li>
+
+    							</ul>
+    						</div>
+
+    						<div class="col-md-3 col-sm-4">
+    							<ul>
+    								<li><a href="/contact"><h5 class="uppercase mb16 fade-on-hover">Press</h5></a></li>
+    								<li><a href="/faqs"><h5 class="uppercase mb16 fade-on-hover">FAQ</h5></a></li>
+    								<li><a href="/contact"><h5 class="uppercase mb16 fade-on-hover">Contact</h5></a></li>
+    							</ul>
+    						</div>
+
+    						<div class="col-md-4 col-md-offset-2 col-sm-4">
+    							<p class="lead">Follow Us</p>
+    							<ul class="list-inline social-list">
+    								<li><a href="https://twitter.com/wejhink" target="_blank"><i class="ti-twitter-alt"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/jhink" target="_blank"><i class="ti-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/wejhink" target="_blank"><i class="ti-facebook"></i></a></li>
+    								<li><a href="#"><i class="ti-dribbble"></i></a></li>
+
+    							</ul>
+    						</div>
+    					</div>
+
+    					<div class="row fade-half">
+    						<div class="col-sm-12 text-center">
+    							<span>© Copyright 2015-Present Jhink Solutions Private Limited - All Rights Reserved</span>
+    						</div>
+    					</div>
+    				</div>
+
+    				<a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
+    			</footer>
+    		</div>
+
+
+    	<script src="/js/jquery.min.js"></script>
+            <script src="/js/bootstrap.min.js"></script>
+            <script src="/js/flexslider.min.js"></script>
+            <script src="/js/lightbox.min.js"></script>
+            <script src="/js/masonry.min.js"></script>
+            <script src="/js/twitterfetcher.min.js"></script>
+            <script src="/js/spectragram.min.js"></script>
+            <script src="/js/ytplayer.min.js"></script>
+            <script src="/js/countdown.min.js"></script>
+            <script src="/js/smooth-scroll.min.js"></script>
+            <script src="/js/parallax.js"></script>
+            <script src="/js/scripts.js"></script>
+        </body>
+    </html>
