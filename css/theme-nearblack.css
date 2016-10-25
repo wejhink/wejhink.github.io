@@ -429,14 +429,16 @@ p.lead {
 a,
 a:visited,
 a:focus,
-a:active,
+a:active{
+  color: #fff;
+}
 a:hover {
   text-decoration: none;
   outline: none;
 }
 a {
   font-weight: 600;
-  color: #13181d;
+  color: #fff;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -2153,6 +2155,9 @@ button[type="submit"] .form-loading {
   letter-spacing: 2px;
   font-weight: 700;
 }
+.accordion .active .inline-block {
+  color:ghostwhite;
+}
 .accordion-1 .active .title {
   background: #13181d;
   color: #fff;
@@ -2865,7 +2870,7 @@ button[type="submit"] .form-loading {
 }
 .page-title-3,
 .page-title-4 {
-  height: 240px;
+  height: 220px;
 }
 .page-title-4 .breadcrumb {
   position: relative;
@@ -3071,7 +3076,8 @@ img {
   margin-bottom: 24px;
 }
 .image-tile img {
-  width: 100%;
+  width: 360px;
+  height: 251px;
   display: inline-block;
 }
 .image-tile .label {
@@ -4753,7 +4759,7 @@ video {
   background: #13181d !important;
 }
 /*!---------- 35. MODALS ----------*/
-.foundry_modal {
+.jhink_modal {
   overflow: hidden;
   max-width: 50%;
   width: 50%;
@@ -4774,7 +4780,7 @@ video {
   -webkit-transform: translateX(-50%) translateY(-40%);
   z-index: -1;
 }
-.foundry_modal.no-bg {
+.jhink_modal.no-bg {
   background: none;
   box-shadow: none !important;
 }
@@ -4796,14 +4802,14 @@ video {
   opacity: .8;
   visibility: visible;
 }
-.foundry_modal.reveal-modal {
+.jhink_modal.reveal-modal {
   opacity: 1;
   visibility: visible;
   z-index: 9999;
   transform: translateX(-50%) translateY(-40%);
   -webkit-transform: translateX(-50%) translateY(-50%);
 }
-.foundry_modal .close-modal {
+.jhink_modal .close-modal {
   z-index: 4;
   position: absolute;
   top: 24px;
@@ -4811,47 +4817,47 @@ video {
   cursor: pointer;
   font-size: 18px;
 }
-.foundry_modal *:not(.background-image-holder):not(.close-modal) {
+.jhink_modal *:not(.background-image-holder):not(.close-modal) {
   z-index: 4;
   position: relative;
 }
-.foundry_modal.image-bg .close-modal,
-.foundry_modal.no-bg .close-modal {
+.jhink_modal.image-bg .close-modal,
+.jhink_modal.no-bg .close-modal {
   color: #fff;
 }
-.foundry_modal iframe {
+.jhink_modal iframe {
   width: 100%;
   min-height: 400px;
 }
 @media all and (min-width: 1500px) {
-  .foundry_modal {
+  .jhink_modal {
     max-width: 45%;
     width: 45%;
   }
 }
 @media all and (max-width: 1190px) {
-  .foundry_modal {
+  .jhink_modal {
     max-width: 70%;
     width: 70%;
     padding: 64px 32px;
   }
 }
 @media all and (max-width: 990px) {
-  .foundry_modal {
+  .jhink_modal {
     max-width: 80%;
     width: 80%;
     padding: 64px 32px;
   }
 }
 @media all and (max-width: 767px) {
-  .foundry_modal {
+  .jhink_modal {
     max-width: 90%;
     width: 90%;
     padding: 48px 15px;
     transform: translateX(0%) translateY(50%);
     -webkit-transform: translateX(0%) translateY(50%);
   }
-  .foundry_modal .close-modal {
+  .jhink_modal .close-modal {
     right: 18px;
   }
 }

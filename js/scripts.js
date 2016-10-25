@@ -343,21 +343,21 @@ $(document).ready(function() {
     
     // Multipurpose Modals
     
-    jQuery('.foundry_modal[modal-link]').remove();
+    jQuery('.jhink_modal[modal-link]').remove();
 
-    if($('.foundry_modal').length && (!jQuery('.modal-screen').length)){
+    if($('.jhink_modal').length && (!jQuery('.modal-screen').length)){
         // Add a div.modal-screen if there isn't already one there.
         var modalScreen = jQuery('<div />').addClass('modal-screen').appendTo('body');
 
     }
 
-    jQuery('.foundry_modal').click(function(){
+    jQuery('.jhink_modal').click(function(){
         jQuery(this).addClass('modal-acknowledged');
     });
     
     $('.modal-container:not([modal-link])').each(function(index) {
         if(jQuery(this).find('iframe[src]').length){
-        	jQuery(this).find('.foundry_modal').addClass('iframe-modal');
+        	jQuery(this).find('.jhink_modal').addClass('iframe-modal');
         	var iframe = jQuery(this).find('iframe');
         	iframe.attr('data-src',iframe.attr('src'));
             iframe.attr('src', '');
@@ -366,13 +366,13 @@ $(document).ready(function() {
         jQuery(this).find('.btn-modal').attr('modal-link', index);
 
         // Only clone and append to body if there isn't already one there
-        if(!jQuery('.foundry_modal[modal-link="'+index+'"]').length){
-            jQuery(this).find('.foundry_modal').clone().appendTo('body').attr('modal-link', index).prepend(jQuery('<i class="ti-close close-modal">'));
+        if(!jQuery('.jhink_modal[modal-link="'+index+'"]').length){
+            jQuery(this).find('.jhink_modal').clone().appendTo('body').attr('modal-link', index).prepend(jQuery('<i class="ti-close close-modal">'));
         }
     });
     
     $('.btn-modal').unbind('click').click(function(){
-    	var linkedModal = jQuery('.foundry_modal[modal-link="' + jQuery(this).attr('modal-link') + '"]');
+    	var linkedModal = jQuery('.jhink_modal[modal-link="' + jQuery(this).attr('modal-link') + '"]');
         jQuery('.modal-screen').toggleClass('reveal-modal');
         if(linkedModal.find('iframe').length){
             if(linkedModal.find('iframe').attr('data-autoplay') === '1'){
@@ -386,7 +386,7 @@ $(document).ready(function() {
     
     // Autoshow modals
 	
-	$('.foundry_modal[data-time-delay]').each(function(){
+	$('.jhink_modal[data-time-delay]').each(function(){
 		var modal = $(this);
 		var delay = modal.attr('data-time-delay');
 		modal.prepend($('<i class="ti-close close-modal">'));
@@ -407,7 +407,7 @@ $(document).ready(function() {
 
     // Autoclose modals
 
-    $('.foundry_modal[data-hide-after]').each(function(){
+    $('.jhink_modal[data-hide-after]').each(function(){
         var modal = $(this);
         var delay = modal.attr('data-hide-after');
         if(typeof modal.attr('data-cookie') != "undefined"){
@@ -430,7 +430,7 @@ $(document).ready(function() {
     });
     
     jQuery('.close-modal:not(.modal-strip .close-modal)').unbind('click').click(function(){
-    	var modal = jQuery(this).closest('.foundry_modal');
+    	var modal = jQuery(this).closest('.jhink_modal');
         modal.toggleClass('reveal-modal');
         if(typeof modal.attr('data-cookie') !== "undefined"){
             mr_cookies.setItem(modal.attr('data-cookie'), "true", Infinity);
@@ -442,19 +442,19 @@ $(document).ready(function() {
     });
     
     jQuery('.modal-screen').unbind('click').click(function(){
-        if(jQuery('.foundry_modal.reveal-modal').find('iframe').length){
-            jQuery('.foundry_modal.reveal-modal').find('iframe').attr('src', '');
+        if(jQuery('.jhink_modal.reveal-modal').find('iframe').length){
+            jQuery('.jhink_modal.reveal-modal').find('iframe').attr('src', '');
         }
-    	jQuery('.foundry_modal.reveal-modal').toggleClass('reveal-modal');
+    	jQuery('.jhink_modal.reveal-modal').toggleClass('reveal-modal');
     	jQuery(this).toggleClass('reveal-modal');
     });
     
     jQuery(document).keyup(function(e) {
 		 if (e.keyCode == 27) { // escape key maps to keycode `27`
-            if(jQuery('.foundry_modal').find('iframe').length){
-                jQuery('.foundry_modal').find('iframe').attr('src', '');
+            if(jQuery('.jhink_modal').find('iframe').length){
+                jQuery('.jhink_modal').find('iframe').attr('src', '');
             }
-			jQuery('.foundry_modal').removeClass('reveal-modal');
+			jQuery('.jhink_modal').removeClass('reveal-modal');
 			jQuery('.modal-screen').removeClass('reveal-modal');
 		}
 	});
